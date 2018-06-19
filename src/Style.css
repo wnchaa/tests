@@ -1,0 +1,84 @@
+.sidebar {
+    height: 100%;
+    width:inherit;
+    left:0px;
+    background-color: #000;
+    color:white;
+    position: fixed !important;
+    z-index: 1;
+    overflow:visible;
+    top: 35px;
+}
+
+.main {
+    height: 100%;
+    width:inherit;
+    right:0px;
+    background-color:white;
+    position: fixed !important;
+    z-index: 5;
+    overflow:visible;
+    top: 35px;
+}
+
+.headers {
+    height: 35px;
+    width: 100%;
+    left: 0px;
+    background-color: #000;
+    color: white;
+    position: fixed !important;
+    z-index: 5;
+    overflow: visible;
+    top:0px; 
+}
+
+.Text{
+    font-size: 25px;
+    color: #bd081c;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 30px 10px 30px 30px;
+}
+
+.textMeaning {
+    text-transform: uppercase;
+    color: #e6e6e6;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+   
+}
